@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* main-color */
+/* breakpoint */
+/***********
+reset.css
+************/
+body {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+dl,
+dd,
+dt {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+.fixHead {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fdfdfd;
+  border-bottom: solid 1px #bfbcbc;
+}
+
+.title {
+  padding-left: 8%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.menu {
+  display: flex;
+}
+.menu-item {
+  margin-right: 38px;
+}
+
+.curt {
+  width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .fixHead {
+    height: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+/* header */
+/* movie */
+.movie {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+}
+.movie-girl video {
+  width: 100%;
+}
+
+/* movie */
+/* concept */
+.concept {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+.concept-title {
+  margin-bottom: 40px;
+}
+.concept-img__size {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.concept-text {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* concept */
+/* brand */
+.brand {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* brand */
+/* product */
+.product {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.product-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.product-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-item {
+  width: 31.33%;
+  margin-bottom: 80px;
+}
+.product-Itemtitle {
+  text-align: center;
+  font-family: monospace;
+}
+.product-price {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.product-regulerPrice__small {
+  font-size: 12px;
+}
+.product-specialPrice {
+  color: #be0303;
+}
+.product-specialPrice__small {
+  font-size: 12px;
+  color: #be0303;
+}
+
+@media screen and (max-width: 425px) {
+  .product-item {
+    width: 148px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+  }
+}
+/* product */
+/* news */
+.news {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.news dt {
+  margin-bottom: 20px;
+}
+.news dd {
+  margin-bottom: 40px;
+}
+.news-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.news-area {
+  text-align: center;
+}
+.news-btn {
+  width: 160px;
+  height: 40px;
+  border: solid 1px #000;
+  margin: 0 auto;
+  border-radius: 80px;
+  position: relative;
+}
+.news-btn:hover {
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.news-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.news-btn:hover .news-btnText {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.news-btnText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* news */
+/* footer */
+footer {
+  border-top: solid 1px #000;
+  padding: 1%;
+}
+footer .copy {
+  text-align: center;
+}
+
+/* footer */

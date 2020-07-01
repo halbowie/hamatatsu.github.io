@@ -1,0 +1,275 @@
+@import "import.scss";
+@charset"UTF-8";
+
+/***********
+reset.css
+************/
+
+body {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  //font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+
+}
+
+
+nav ul li {
+  list-style-type: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+dl,
+dd,
+dt {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+.fixHead {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fdfdfd;
+  border-bottom: solid 1px #bfbcbc;
+}
+
+.title {
+  padding-left: 8%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.menu {
+  display: flex;
+
+  &-item {
+    margin-right: 38px;
+  }
+}
+
+.curt {
+  width: 25px;
+}
+
+@include media(sp) {
+  .fixHead {
+    height: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* header */
+
+/* movie */
+.movie {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+
+  &-girl video {
+    width: 100%;
+  }
+}
+
+@include media (sp) {}
+
+/* movie */
+
+/* concept */
+.concept {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 60px;
+
+  &-title {
+    margin-bottom: 40px;
+  }
+
+  &-img__size {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+/* concept */
+
+/* brand */
+.brand {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* brand */
+
+/* product */
+.product {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-item {
+    width: 31.33%;
+    margin-bottom: 80px;
+  }
+
+  &-Itemtitle {
+    text-align: center;
+    font-family: monospace;
+  }
+
+  &-price {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+
+  &-regulerPrice__small {
+    font-size: 12px;
+  }
+
+  &-specialPrice {
+    color: #be0303;
+
+    &__small {
+      font-size: 12px;
+      color: #be0303;
+    }
+  }
+}
+
+@include media(item) {
+  .product {
+    &-item {
+      width: 148px;
+      margin-bottom: 80px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* product */
+
+/* news */
+.news {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+
+  & dl {
+    
+  }
+
+  & dt {
+    margin-bottom: 20px;
+  }
+
+  & dd {
+    margin-bottom: 40px;
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-area {
+    text-align: center;
+  }
+
+  &-btn {
+    width: 160px;
+    height: 40px;
+    border: solid 1px #000;
+    margin: 0 auto;
+    border-radius: 80px;
+    position: relative;
+
+    &:hover {
+      background-color: #000;
+      transition: all .3s ease-in-out;
+    }
+
+    & a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover .news-btnText {
+      color: #fff;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  &-btnText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+/* news */
+
+/* footer */
+footer {
+  border-top: solid 1px #000;
+  padding: 1%;
+
+  & .copy {
+    text-align: center;
+  }
+}
+
+/* footer */
